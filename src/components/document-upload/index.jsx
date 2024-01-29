@@ -8,7 +8,7 @@ import ToleranceWindow from "./tolerance-window";
 
 const DocumentUpload = () => {
   return (
-    <Section className="grid grid-cols-1 sm:grid-cols-2 justify-items-center p-5">
+    <Section className="grid grid-cols-1 md:grid-cols-2 justify-items-center p-5">
         <Button className="col-start-1 justify-self-start h-9 w-9 !p-1">
           <Image height={30} width={30} src="/close-button.svg" alt="Close button" />
         </Button>
@@ -29,7 +29,7 @@ const DocumentUpload = () => {
         </Container>
 
 
-        <Container className="w-full col-start-1 sm:col-start-2 md:ml-20">
+        <Container className="w-full col-start-1 md:col-start-2 md:ml-20">
           <P className="font-bold"></P>
           <RadioGroup title="Split schedule using social distancing?" options={RADIO_OPTIONS_1}/>
           <HR className="w-3/5 my-3" />

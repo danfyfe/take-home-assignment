@@ -1,4 +1,4 @@
-import { Section, Button, Container, H2, HR, P } from "@/components/core";
+import { Button, Container, P } from "@/components/core";
 
 const Submit = () => {
   return (

@@ -12,7 +12,6 @@ const ToleranceWindow = () => {
   return (
     <div className="flex mt-4 items-center">
       <div className="relative">
-        {/* <input type="checkbox" checked={toggle} value={toggle} onChange={handleToggle} /> */}
         <div className="w-10 h-6 bg-blue-primary rounded-full shadow-inner"></div>
         <input
           type="checkbox" checked={toggled} value={toggled} onChange={handleToggle} 
@@ -23,7 +22,7 @@ const ToleranceWindow = () => {
             ${toggled ? 'right-1' : 'left-1'}
           `}></input>
       </div>
-      <label className="ml-4 text-sm">Toggle {toggled ? 'ON' : 'OFF'}</label>
+      <label className="ml-4 text-sm min-w-[75px]">Toggle {toggled ? 'ON' : 'OFF'}</label>
       <div className="flex items-center border-l-2 border-blue-primary ml-4">
           <ClockIcon />
           <P className="ml-1">Select Tolerance Level</P>
