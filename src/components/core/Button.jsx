@@ -4,8 +4,8 @@ const Button = ({ className, children, onClick, inverted }) => (
       ${className ? className : ''}
       ${inverted ?
         'text-yellow-primary bg-white border-yellow-primary' :
-        'text-white bg-blue-primary border-blue-primary'}
-      rounded-lg p-2 border-2 w-fit flex justify-center items-center
+        'text-white bg-blue-primary border-blue-primary'} text-sm
+      rounded-lg px-14 py-3 border-2 w-fit flex justify-center items-center
     `}
     onClick={onClick}
   >

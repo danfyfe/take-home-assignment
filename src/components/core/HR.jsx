@@ -3,7 +3,7 @@ const HR = ({ className }) => (
     className={`
       ${className ? className : ''}
        border-gray-primary border-1
-        w-full mt-3
+        mt-3
     `}
   />
 );

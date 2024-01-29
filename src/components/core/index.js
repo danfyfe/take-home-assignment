@@ -5,6 +5,7 @@ import HR from "./HR";
 import Input from "./Input";
 import P from "./P";
 import Section from "./Section";
+import DragAndDrop from "./DragAndDrop";
 
 export {
   Button,
@@ -13,5 +14,6 @@ export {
   HR,
   Input,
   P,
-  Section
+  Section,
+  DragAndDrop
 };
