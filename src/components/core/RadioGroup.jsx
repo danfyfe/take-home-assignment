@@ -1,6 +1,6 @@
-const RadioGroup = ({ title, options }) => {
+const RadioGroup = ({ title, options, className }) => {
   return (
-    <fieldset className="flex">
+    <fieldset className={`flex ${className ? className : ''}`}>
       <legend className="text-sm text-blue-primary font-bold mb-2">
         {title}
       </legend>
