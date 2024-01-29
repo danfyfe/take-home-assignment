@@ -1,4 +1,4 @@
-export const SelectOptions = [
+export const SELECT_OPTIONS_1 = [
   {
     label: 'Select Import Name:',
     value: ''
@@ -20,3 +20,26 @@ export const SelectOptions = [
     value: 'example-4'
   }
 ];
+
+
+export const RADIO_OPTIONS_1 = [
+  {
+    value: "yes",
+    label: "Yes"
+  },
+  {
+    value: "no",
+    label: "No"
+  }
+]
+
+export const RADIO_OPTIONS_2 = [
+  {
+    value: "single",
+    label: "Single"
+  },
+  {
+    value: "multiple",
+    label: "Multiple"
+  }
+]

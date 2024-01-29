@@ -3,7 +3,7 @@ const Select = ({ options, label, name }) => {
   return (
     <label for={name}>
       {label}
-      <select className="
+      <select id={name} className="
         w-full h-10 border border-gray-500 rounded-lg appearance-none pl-2
         bg-[url('/select-caret.svg')] bg-no-repeat bg-right
       ">

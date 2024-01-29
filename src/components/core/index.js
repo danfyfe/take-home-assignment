@@ -6,6 +6,7 @@ import Input from "./Input";
 import P from "./P";
 import Section from "./Section";
 import DragAndDrop from "./DragAndDrop";
+import RadioGroup from "./RadioGroup";
 
 export {
   Button,
@@ -15,5 +16,6 @@ export {
   Input,
   P,
   Section,
-  DragAndDrop
+  DragAndDrop,
+  RadioGroup
 };
