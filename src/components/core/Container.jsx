@@ -1,13 +1,12 @@
 const Container = ({ className, children }) => (
-  <section
+  <div
     className={`
       ${className ? className : ''}
-      max-w-6xl w-[calc(100%-2rem)]
-      bg-white
+      
     `}
   >
     {children}
-  </section>
+  </div>
 );
 
 export default Container;
