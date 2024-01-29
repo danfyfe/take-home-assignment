@@ -24,7 +24,7 @@ const ToleranceWindow = () => {
       </div>
       <label className="ml-4 text-sm min-w-[75px]">Toggle {toggled ? 'ON' : 'OFF'}</label>
       <div className="flex items-center border-l-2 border-blue-primary ml-4">
-          <ClockIcon />
+          <ClockIcon className="ml-5" />
           <P className="ml-1">Select Tolerance Level</P>
       </div>
     </div>
