@@ -3,6 +3,7 @@ const H2 = ({ className, children }) => (
     className={`
       ${className ? className : ''}
       text-4xl font-bold text-center
+      text-blue-primary
     `}
   >
     {children}

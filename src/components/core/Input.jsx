@@ -1,5 +1,5 @@
 const Input = ({ className, type, label, name,  }) => (
-  <label>
+  <label for={name}>
     {label}
     <input
       name={name}
@@ -8,6 +8,7 @@ const Input = ({ className, type, label, name,  }) => (
         ${className ? className : ''}
       `}
     />
+
   </label>
 );
 
