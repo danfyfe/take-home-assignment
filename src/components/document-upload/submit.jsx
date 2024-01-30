@@ -4,7 +4,7 @@ import { P } from "@/components/core/typography"
 
 const Submit = () => (
   <Container className="col-span-2">
-    <P className="font-bold my-5 text-center">
+    <P className="font-bold mb-5 text-center text-base">
       Data in the import file is correct. Please press Continue to import.
     </P>
     <Container className="flex flex-col md:flex-row justify-center items-center">

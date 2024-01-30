@@ -3,13 +3,15 @@ import ClockIcon from "../core/icons/clock-icon";
 const ToleranceWindow = ({ name, value, onChange}) => (
   <>
     <P className="font-bold">Tolerance Window:</P>
-    <div className="flex mt-4 items-center">
+    <div className="flex mt-2 items-center">
       <div className="relative">
         <div className="w-10 h-6 bg-blue-primary rounded-full shadow-inner"></div>
         <input
           name={name}
           value={value}
-          type="checkbox" checked={value} onChange={onChange} 
+          type="checkbox"
+          checked={value}
+          onChange={onChange} 
           className={`
             absolute top-1/2 w-4 h-4 bg-white rounded-full shadow-md
             transform transition-transform translate-x-0 -translate-y-1/2

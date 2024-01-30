@@ -54,7 +54,6 @@ const DragAndDrop = ({ setFieldValue }) => {
         >
           <Image src="/document-icon.png" height={20} width={17} alt="Document Icon" className="mb-2"/>
           <P className="text-sm">Drag & Drop Here Or <b>Browse</b></P>
-          <input />
         </div>
         )
       }

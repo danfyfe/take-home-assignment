@@ -54,7 +54,7 @@ const DocumentUpload = () => {
                 setFieldValue={setFieldValue}
               />
               <HR className="w-3/5 my-3" />
-              <P className="font-bold mb-2">Elapse Data Checking</P>
+              <P className="font-bold mb-1">Elapse Data Checking</P>
               <P className="font-bold text-green-success mb-2">No Elapsed Dates!</P>
               <HR className="w-3/5 mb-3 mt-4" />
               <ToleranceWindow
@@ -64,7 +64,7 @@ const DocumentUpload = () => {
               />
             </Container>
 
-            <Container className="w-full col-start-1 md:col-start-2 md:ml-20">
+            <Container className="w-full col-start-1 md:col-start-2 md:ml-32">
               <RadioGroup
                 name="split-schedule"
                 value={values["split-schedule"]}
@@ -83,10 +83,10 @@ const DocumentUpload = () => {
                   onChange={handleChange}
                 />
               </RadioGroup>
-              <HR className="w-3/5 my-3" />
-              <P className="font-bold mb-2">Location Checking</P>
+              <HR className="w-8/12 mb-3 mt-5" />
+              <P className="font-bold mb-1">Location Checking</P>
               <P className="font-bold text-green-success">All Available!</P>
-              <HR className="w-3/5 mb-3 mt-4" />
+              <HR className="w-8/12 mb-3 mt-4" />
               <RadioGroup
                 name="client-type"
                 className="mb-8"
@@ -106,6 +106,7 @@ const DocumentUpload = () => {
                 />
               </RadioGroup>
               <Select
+                className="mb-6"
                 width="w-1/3"
                 label="Testing Center 1"
                 options={SELECT_OPTIONS_2}
@@ -115,6 +116,7 @@ const DocumentUpload = () => {
                 onChange={handleChange}
               />
               <Select
+                className="mb-6"
                 width="w-1/3"
                 label="Testing Center 2"
                 options={SELECT_OPTIONS_2}
@@ -124,6 +126,7 @@ const DocumentUpload = () => {
                 onChange={handleChange}
               />
               <Select
+                className="mb-6"
                 width="w-1/3"
                 label="Testing Center 3"
                 options={SELECT_OPTIONS_2}
@@ -133,6 +136,7 @@ const DocumentUpload = () => {
                 onChange={handleChange}
               />
               <Select
+                className="mb-6"
                 width="w-1/3"
                 label="Testing Center 4"
                 options={SELECT_OPTIONS_2}
