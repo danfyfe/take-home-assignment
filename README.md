@@ -35,7 +35,7 @@ The `/document-upload` directory contains the built out component from the desig
 Formik, a React form library, handles the basic form state and logic. The library promotes ease of use, as forms can get complicated in React and this work contains a good amount of inputs.
 
 ### Styling with TailwindCSS
-TailwindCSS is used to handle the styling. It is a great library that allows for a lot of flexibility and allows for fast, painless development.
+TailwindCSS is used to handle the styling. It is a great library that allows for a lot of flexibility and fast, painless development.
 
 ### Testing considerations
 Although not included here, testing components is a critical part of building a code base. Tools like Jest can be used to test basic data flow and functionality of components. Adding Jest Snapshots can also alert developers to component changes that might not have been intentional. On top of that, testing frameworks like Cucumber or Cypress can be used to test real user flows to ensure all user stories are considered.
