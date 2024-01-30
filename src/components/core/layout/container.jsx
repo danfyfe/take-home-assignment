@@ -1,8 +1,6 @@
 const Container = ({ className, children }) => (
   <div
-    className={`
-      ${className ? className : ''}
-    `}
+    className={`${className ? className : ''}`}
   >
     {children}
   </div>

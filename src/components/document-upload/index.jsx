@@ -18,7 +18,7 @@ const DocumentUpload = () => {
       <Formik
         initialValues={{
           "import-name": '',
-          "document": {},
+          "document": '',
           "tolerance-window": true,
           "split-schedule": '',
           "client-type": '',
