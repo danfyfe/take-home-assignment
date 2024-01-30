@@ -1,4 +1,5 @@
-import { Container, H2, HR } from "@/components/core";
+import { H2 } from "@/components/core/typography";
+import { Container, HR } from "@/components/core/layout";
 
 const Heading = () => {
   return (

@@ -1,5 +1,7 @@
 'use client'
-import { P, Container, Button } from "@/components/core"
+import { P } from "@/components/core/typography";
+import { Container } from "@/components/core/layout";
+import { Button } from "@/components/core/forms";
 import Image from "next/image";
 import { useState } from "react";
 

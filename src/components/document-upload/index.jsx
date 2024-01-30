@@ -1,11 +1,14 @@
 'use client'
 import Image from "next/image";
-import { Section, Button, Container, HR, P, DragAndDrop, RadioGroup, Select, Radio } from "@/components/core";
+import { Section, Container, HR } from "@/components/core/layout";
+import { Button, RadioGroup, Radio, Select } from "@/components/core/forms";
+import { P } from "@/components/core/typography";
 import Heading from "./heading";
 import Submit from "./submit";
 import ToleranceWindow from "./tolerance-window";
-import { SELECT_OPTIONS_1, SELECT_OPTIONS_2, RADIO_OPTIONS_1, RADIO_OPTIONS_2 } from "@/data";
-import { Formik, Form, Field } from "formik";
+import DragAndDrop from "../core/forms/drag-and-drop";
+import { SELECT_OPTIONS_1, SELECT_OPTIONS_2 } from "@/data";
+import { Formik, Form } from "formik";
 
 const DocumentUpload = () => {
   return (
@@ -16,7 +19,7 @@ const DocumentUpload = () => {
       <Formik
         initialValues={{
           "import-name": '',
-          "document": {},
+          "document-name": '',
           "tolerance-window": true,
           "split-schedule": '',
           "client-type": '',

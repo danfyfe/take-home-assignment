@@ -1,4 +1,6 @@
-import { Button, Container, P } from "@/components/core";
+import { Button } from "@/components/core/forms";
+import { Container } from "@/components/core/layout";
+import { P } from "@/components/core/typography"
 
 const Submit = () => {
   return (
