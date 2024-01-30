@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Select = ({ options, label, name, className, width, icon }) => {
+const Select = ({ options, label, name, value, className, width, icon, onChange }) => {
   return (
     <fieldset className={`${className ? className : ''} flex items-center mb-3`}>
       {
@@ -10,11 +10,17 @@ const Select = ({ options, label, name, className, width, icon }) => {
           </label>
         ) : null
       }
-      <select id={name} className={`
+      <select
+        id={name}
+        onChange={onChange}
+        className={`
           h-10 border border-gray-500 rounded-lg appearance-none pl-2
           bg-[url('/select-caret.svg')] bg-no-repeat bg-right
           ${width ? width : ''}
-        `}>
+        `}
+          value={value}
+          name={name}
+        >
         {
           options?.length > 0 && options.map((option, idx) => {
             return (

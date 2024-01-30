@@ -1,5 +1,6 @@
-const Button = ({ className, children, onClick, inverted }) => (
+const Button = ({ className, children, onClick, inverted, type="button" }) => (
   <button
+    type={type}
     className={`
       ${className ? className : ''}
       ${inverted ?

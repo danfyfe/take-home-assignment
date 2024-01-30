@@ -7,7 +7,7 @@ const Submit = () => {
       Data in the import file is correct. Please press Continue to import.
     </P>
     <Container className="flex flex-col md:flex-row justify-center items-center">
-      <Button>
+      <Button type="submit">
         Continue import
       </Button>
       <Button inverted className="mt-3 md:ml-5 md:mt-0">

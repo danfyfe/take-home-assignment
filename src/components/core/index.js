@@ -7,6 +7,7 @@ import P from "./P";
 import Section from "./Section";
 import DragAndDrop from "./DragAndDrop";
 import RadioGroup from "./RadioGroup";
+import Radio from "./Radio";
 import Select from "./Select";
 
 export {
@@ -19,5 +20,6 @@ export {
   Section,
   DragAndDrop,
   RadioGroup,
+  Radio,
   Select
 };
