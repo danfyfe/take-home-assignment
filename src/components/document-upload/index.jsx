@@ -63,8 +63,6 @@ const DocumentUpload = () => {
 
 
             <Container className="w-full col-start-1 md:col-start-2 md:ml-20">
-              <P className="font-bold"></P>
-              {/* <RadioGroup title="Split schedule using social distancing?" options={RADIO_OPTIONS_1}/> */}
               <RadioGroup
                 name="split-schedule"
                 value={values["split-schedule"]}
@@ -142,7 +140,6 @@ const DocumentUpload = () => {
                 onChange={handleChange}
               />
             </Container>
-
             <Submit />
           </Form>
         )}
