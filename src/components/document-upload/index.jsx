@@ -1,12 +1,11 @@
 'use client'
 import Image from "next/image";
 import { Section, Container, HR } from "@/components/core/layout";
-import { Button, RadioGroup, Radio, Select } from "@/components/core/forms";
+import { Button, RadioGroup, Radio, Select, DragAndDrop } from "@/components/core/forms";
 import { P } from "@/components/core/typography";
 import Heading from "./heading";
 import Submit from "./submit";
 import ToleranceWindow from "./tolerance-window";
-import DragAndDrop from "../core/forms/drag-and-drop";
 import { SELECT_OPTIONS_1, SELECT_OPTIONS_2 } from "@/data";
 import { Formik, Form } from "formik";
 
@@ -19,7 +18,7 @@ const DocumentUpload = () => {
       <Formik
         initialValues={{
           "import-name": '',
-          "document-name": '',
+          "document": {},
           "tolerance-window": true,
           "split-schedule": '',
           "client-type": '',
@@ -36,7 +35,8 @@ const DocumentUpload = () => {
         {({
           values,
           handleChange,
-          handleSubmit
+          handleSubmit,
+          setFieldValue
         }) => (
           <Form className="grid grid-cols-1 md:grid-cols-2 justify-items-center" onSubmit={handleSubmit}>
             <Heading />
@@ -51,7 +51,7 @@ const DocumentUpload = () => {
               />
               <HR className="w-3/5 my-3" />
               <DragAndDrop
-                
+                setFieldValue={setFieldValue}
               />
               <HR className="w-3/5 my-3" />
               <P className="font-bold mb-2">Elapse Data Checking</P>
@@ -63,7 +63,6 @@ const DocumentUpload = () => {
                 onChange={handleChange}
               />
             </Container>
-
 
             <Container className="w-full col-start-1 md:col-start-2 md:ml-20">
               <RadioGroup
