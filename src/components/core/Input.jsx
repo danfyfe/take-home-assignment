@@ -1,5 +1,5 @@
 const Input = ({ className, type, label, name,  }) => (
-  <label for={name}>
+  <label htmlFor={name}>
     {label}
     <input
       name={name}

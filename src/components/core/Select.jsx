@@ -5,7 +5,7 @@ const Select = ({ options, label, name, className, width, icon }) => {
     <fieldset className={`${className ? className : ''} flex items-center mb-3`}>
       {
         !!label ? (
-          <label for={name} className="mr-6 text-sm">
+          <label htmlFor={name} className="mr-6 text-sm">
             {label}
           </label>
         ) : null

@@ -1,19 +1,19 @@
-import { Section, Button, Container, H2, HR, P, DragAndDrop, RadioGroup } from "@/components/core";
+'use client'
+import { Section, Button, Container, HR, P, DragAndDrop, RadioGroup, Select } from "@/components/core";
 import Heading from "./heading";
 import Image from "next/image";
 import Submit from "./submit";
-import Select from "../core/Select";
 import { SELECT_OPTIONS_1, SELECT_OPTIONS_2, RADIO_OPTIONS_1, RADIO_OPTIONS_2 } from "@/data";
 import ToleranceWindow from "./tolerance-window";
 
 const DocumentUpload = () => {
   return (
-    <Section className="grid grid-cols-1 md:grid-cols-2 justify-items-center p-5">
+    <Section className="p-5">
         <Button className="col-start-1 justify-self-start h-9 w-9 !p-1">
           <Image height={30} width={30} src="/close-button.svg" alt="Close button" />
         </Button>
 
-      {/* <form> */}
+      <form className="grid grid-cols-1 md:grid-cols-2 justify-items-center">
         <Heading />
 
         <Container className="w-full col-start-1">
@@ -46,7 +46,7 @@ const DocumentUpload = () => {
         </Container>
 
         <Submit />
-      {/* </form> */}
+      </form>
     </Section>
   )
 };

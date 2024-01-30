@@ -19,7 +19,7 @@ const Radio = ({ label, name, className }) => {
   return (
     <div className={`${className ? className : ''} max-w-fit pr-2`}>
       <input id={name} type="radio" name={name} className="" />
-      <label for={name} className="ml-2">
+      <label htmlFor={name} className="ml-2">
         {label}
       </label>
     </div>
