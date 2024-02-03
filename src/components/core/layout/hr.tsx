@@ -1,4 +1,6 @@
-const HR = ({ className }) => (
+import { IHRProps } from "@/interfaces/layout";
+
+const HR = ({ className }: IHRProps) => (
   <hr
     className={`
       ${className ? className : ''}

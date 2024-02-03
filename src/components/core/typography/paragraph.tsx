@@ -1,4 +1,6 @@
-const P = ({ className, children }) => (
+import { IParagraphProps } from "@/interfaces/typography";
+
+const P = ({ className, children }: IParagraphProps) => (
   <p
     className={`
       ${className ? className : ''}

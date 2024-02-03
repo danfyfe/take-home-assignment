@@ -1,6 +1,7 @@
+import { ISelectProps, Option } from "@/interfaces/forms";
 import Image from "next/image";
 
-const Select = ({ options, label, name, value, className, width, icon, onChange }) => (
+const Select = ({ optionObjects, label, name, value, className, width, icon, onChange }: ISelectProps) => (
   <fieldset className={`${className ? className : ''} flex items-center mb-3`}>
     {
       !!label ? (
@@ -21,7 +22,7 @@ const Select = ({ options, label, name, value, className, width, icon, onChange 
         name={name}
       >
       {
-        options?.length > 0 && options.map((option, idx) => {
+        optionObjects?.length > 0 && optionObjects.map((option: Option, idx: number) => {
           return (
             <option key={`${option.label}-${idx}`} value={option.value} >{option.label}</option>
           )

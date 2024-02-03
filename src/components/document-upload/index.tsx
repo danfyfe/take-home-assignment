@@ -44,7 +44,7 @@ const DocumentUpload = () => {
               <Select
                 width="w-full"
                 label=""
-                options={SELECT_OPTIONS_1}
+                optionObjects={SELECT_OPTIONS_1}
                 name="import-name"
                 value={values["import-name"]}
                 onChange={handleChange}
@@ -66,8 +66,6 @@ const DocumentUpload = () => {
 
             <Container className="w-full col-start-1 md:col-start-2 md:ml-32">
               <RadioGroup
-                name="split-schedule"
-                value={values["split-schedule"]}
                 title="Split schedule using social distancing?"
               >
                 <Radio
@@ -88,7 +86,6 @@ const DocumentUpload = () => {
               <P className="font-bold text-green-success">All Available!</P>
               <HR className="w-8/12 mb-3 mt-4" />
               <RadioGroup
-                name="client-type"
                 className="mb-8"
                 title="Client:"
               >
@@ -109,8 +106,8 @@ const DocumentUpload = () => {
                 className="mb-6"
                 width="w-1/3"
                 label="Testing Center 1"
-                options={SELECT_OPTIONS_2}
-                icon="clock"
+                optionObjects={SELECT_OPTIONS_2}
+                icon={true}
                 name="testing-center-client-1"
                 value={values["testing-center-client-1"]}
                 onChange={handleChange}
@@ -119,8 +116,8 @@ const DocumentUpload = () => {
                 className="mb-6"
                 width="w-1/3"
                 label="Testing Center 2"
-                options={SELECT_OPTIONS_2}
-                icon="clock"
+                optionObjects={SELECT_OPTIONS_2}
+                icon={true}
                 name="testing-center-client-2"
                 value={values["testing-center-client-2"]}
                 onChange={handleChange}
@@ -129,8 +126,8 @@ const DocumentUpload = () => {
                 className="mb-6"
                 width="w-1/3"
                 label="Testing Center 3"
-                options={SELECT_OPTIONS_2}
-                icon="clock"
+                optionObjects={SELECT_OPTIONS_2}
+                icon={true}
                 name="testing-center-client-3"
                 value={values["testing-center-client-3"]}
                 onChange={handleChange}
@@ -139,8 +136,8 @@ const DocumentUpload = () => {
                 className="mb-6"
                 width="w-1/3"
                 label="Testing Center 4"
-                options={SELECT_OPTIONS_2}
-                icon="clock"
+                optionObjects={SELECT_OPTIONS_2}
+                icon={true}
                 name="testing-center-client-4"
                 value={values["testing-center-client-4"]}
                 onChange={handleChange}

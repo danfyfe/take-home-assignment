@@ -1,4 +1,6 @@
-const Section = ({ className, children }) => (
+import { ISectionProps } from "@/interfaces/layout";
+
+const Section = ({ className, children }: ISectionProps) => (
   <section
     className={`
       ${className ? className : ''}

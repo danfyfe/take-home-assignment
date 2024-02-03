@@ -1,5 +1,7 @@
 
-const Radio = ({ label, name, value, className, onChange }) => (
+import { IRadioProps } from "@/interfaces/forms";
+
+const Radio = ({ label, name, value, className, onChange }: IRadioProps) => (
   <div className={`${className ? className : ''} max-w-fit pr-4`}>
     <input id={`${name}-${value}`} type="radio" name={name} value={value} onChange={onChange} />
     <label htmlFor={`${name}-${value}`} className="ml-2">

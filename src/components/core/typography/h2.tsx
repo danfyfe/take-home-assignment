@@ -1,4 +1,6 @@
-const H2 = ({ className, children }) => (
+import { IH2Props } from "@/interfaces/typography";
+
+const H2 = ({ className, children }: IH2Props) => (
   <h2
     className={`
       ${className ? className : ''}

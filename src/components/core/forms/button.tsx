@@ -1,4 +1,6 @@
-const Button = ({ className, children, onClick, inverted, type="button" }) => (
+import { IButtonProps } from "@/interfaces/forms";
+
+const Button = ({ className, children, onClick, inverted, type="button" }: IButtonProps) => (
   <button
     type={type}
     className={`

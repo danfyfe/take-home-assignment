@@ -4,12 +4,13 @@ import { Container } from "@/components/core/layout";
 import { Button } from "@/components/core/forms";
 import Image from "next/image";
 import { useState } from "react";
+import { IDragAndDropProps } from "@/interfaces/forms";
 
-const DragAndDrop = ({ setFieldValue }) => {
+const DragAndDrop = ({ setFieldValue }: IDragAndDropProps) => {
   const [dragging, setDragging] = useState(false);
-  const [document, setDocument] = useState(null);
+  const [document, setDocument] = useState<File | null>(null);
 
-  const handleDragEnter = (e) => {
+  const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setDragging(true);
   };
@@ -18,13 +19,13 @@ const DragAndDrop = ({ setFieldValue }) => {
     setDragging(false);
   };
 
-  const handleDragOver = (e) => {
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
   };
 
-  const handleDrop = (e) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    const document = e.dataTransfer.files[0];
+    const document: File = e.dataTransfer.files[0];
 
     if (document) {
       setDocument(document);

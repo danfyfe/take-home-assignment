@@ -31,6 +31,9 @@ The structure of the components in this project is inspired by the basic idea of
 
 The `/document-upload` directory contains the built out component from the design. This component is broken into smaller pieces that are specific to the component for increased readability. These components are also located in the `/document-upload` directory, while the main exported component lives in the index file.
 
+### Type Interfaces
+The type interfaces are stored in the same format as the component structure. Each directory in the component structure has it's own definitions file that contains the needed type definitions for the components.
+
 ### Form with Formik
 Formik, a React form library, handles the basic form state and logic. The library promotes ease of use, as forms can get complicated in React and this work contains a good amount of inputs.
 

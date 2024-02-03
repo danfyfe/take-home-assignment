@@ -1,6 +1,7 @@
 import { P } from "@/components/core/typography"
 import ClockIcon from "../core/icons/clock-icon";
-const ToleranceWindow = ({ name, value, onChange}) => (
+import { IToleranceWindowProps } from "@/interfaces/document-upload";
+const ToleranceWindow = ({ name, value, onChange}: IToleranceWindowProps) => (
   <>
     <P className="font-bold">Tolerance Window:</P>
     <div className="flex mt-2 items-center">
@@ -8,7 +9,7 @@ const ToleranceWindow = ({ name, value, onChange}) => (
         <div className="w-10 h-6 bg-blue-primary rounded-full shadow-inner"></div>
         <input
           name={name}
-          value={value}
+          value={value ? 'true' : undefined}
           type="checkbox"
           checked={value}
           onChange={onChange} 
